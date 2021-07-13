@@ -11,6 +11,11 @@ body {
 
 <link href="menu.css" rel="stylesheet" type="text/css">
 <link href="custom.css" rel="stylesheet" type="text/css">
+<link href="owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="owl.theme.default.css" rel="stylesheet" type="text/css">
+<link href="animate1.css" rel="stylesheet" type="text/css">
+<script src="jquery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
 </head>
 <body>
 <!-- Menu Start -->
@@ -31,13 +36,25 @@ body {
 <!-- Menu End -->
 
 <!--carosel start -->
-<div id="bg">
-<div id="content">Hallo</div>
+<div class="owl-carousel">
+    <div class="item"><h4>1</h4></div>
+    <div class="item"><h4>2</h4></div>
+    <div class="item"><h4>3</h4></div>
+    <div class="item"><h4>4</h4></div>
+    <div class="item"><h4>5</h4></div>
+    <div class="item"><h4>6</h4></div>
+    <div class="item"><h4>7</h4></div>
+    <div class="item"><h4>8</h4></div>
+    <div class="item"><h4>9</h4></div>
+    <div class="item"><h4>10</h4></div>
+    <div class="item"><h4>11</h4></div>
+    <div class="item"><h4>12</h4></div>
 </div>
 
 <!-- carosel end -->
 
 <script>
+// the menu
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -46,6 +63,18 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+// owl carosel
+
+$('.owl-carousel').owlCarousel({
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+	loop:true,
+    nav:true,
+	items: 1,
+	stagePadding: 50
+
+})
 </script>
 
 </body>

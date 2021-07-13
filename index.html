@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+
+<link href="menu.css" rel="stylesheet" type="text/css">
+<link href="custom.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Menu Start -->
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active"><img src="logo.png" width="102" height="76" alt="Logo"></a>
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Solutions</a>
+  <a href="#">Products</a>
+  <a href="#">Portofolio</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact</a>
+  <a href="#"><button>Get Quote</button></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    +
+  </a>
+</div>
+<!-- Menu End -->
+
+<!--carosel start -->
+<div id="bg">
+<div id="content">Hallo</div>
+</div>
+
+<!-- carosel end -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
